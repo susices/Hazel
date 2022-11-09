@@ -1,5 +1,6 @@
 #Dir
 .vs/
+.idea/
 /bin-int/
 /bin/
 

@@ -26,7 +26,8 @@ project "Hazel"
 
     includedirs
     {
-        "%{prj.name}/vendor/spdlog/include"
+        "%{prj.name}/src",
+        "%{prj.name}/vendor/spdlog/include",
     }
 
     filter "system:windows"
@@ -55,7 +56,7 @@ project "Hazel"
         optimize "On"
 
     filter "configurations:Dist"
-        defines "HZ_DEBUG"
+        defines "HZ_DIST"
         optimize "On"
 
         
@@ -104,7 +105,7 @@ project "Sandbox"
         optimize "On"
 
     filter "configurations:Dist"
-        defines "HZ_DEBUG"
+        defines "HZ_DIST"
         optimize "On"
 
 

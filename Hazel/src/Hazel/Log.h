@@ -33,3 +33,5 @@ namespace Hazel {
 #define HZ_TRACE(...) ::Hazel::Log::GetClientLogger()->trace(__VA_ARGS__)
 
 
+
+

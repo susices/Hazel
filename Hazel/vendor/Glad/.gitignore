@@ -32,8 +32,8 @@ cmake-build-*
 
 # Hazel-specific
 # Directories
-bin/
-bin-int/
+/bin/
+/bin-int/
 
  # Files
 Makefile 

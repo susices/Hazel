@@ -49,7 +49,7 @@ namespace Hazel {
 				layer->OnUpdate();
 			}
 			
-			m_Window->OnUpdate();	
+			m_Window->OnUpdate();
 		}
 	}
 

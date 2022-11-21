@@ -49,7 +49,7 @@ namespace Hazel {
 				layer->OnUpdate();
 			}
 			auto[x,y] =  Input::GetMousePosition();
-			HZ_CORE_TRACE("{0}, {1}",x,y);
+			//HZ_CORE_TRACE("{0}, {1}",x,y);
 			
 			m_Window->OnUpdate();
 		}
@@ -60,7 +60,7 @@ namespace Hazel {
 
 		EventDispatcher dispatcher(e);
 		dispatcher.Dispatch<WindowCloseEvent>(BIND_EVENT_FN(OnWindowClose));
-		HZ_CORE_INFO("{0}",e);
+		//HZ_CORE_INFO("{0}",e);
 
 		for (auto it = m_layerStack.end(); it!=m_layerStack.begin();)
 		{

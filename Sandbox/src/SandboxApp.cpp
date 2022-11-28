@@ -22,9 +22,14 @@ public:
 	}
 
 	virtual void OnImGuiRender() override
-	{
+	{  
 		ImGui::Begin("Test");
 		ImGui::Text("Hello");
+		ImGui::End();
+		
+
+		ImGui::Begin("Test2");
+		ImGui::Text("Hello2");
 		ImGui::End();
 	}
 
@@ -34,7 +39,6 @@ public:
 		{
 			Hazel::KeyPressedEvent& e = (Hazel::KeyPressedEvent&)event;
 			HZ_TRACE("{0}",(char)e.GetKeyCode());
-			
 		}
 	}
 	
